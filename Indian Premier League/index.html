@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>ddb</title>
+		<meta name="description" content="">
+		<meta name="author" content="Yash">
+
+		<meta name="viewport" content="width=device-width" initial-scale="1.0">
+		<style type="text/css">
+			invisible
+			{
+				display: none;
+
+			}
+			visible
+			{
+				padding: 30 30 30 30;
+				margin-top: 30px;
+			}
+			btn
+			{
+				display: inline;
+			}
+		</style>
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="stylesheet"  href="css/bootstrap.min.css"/>
+	</head>
+
+	<body>
+	<form class="btn btn-success" action="hashpartition.php">
+		<input type="submit" name="hashpartition" value="hashpartition">
+	</form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<form class="btn btn-success" action="listpartition.php">
+		<input type="submit" name="listpartition" value="list partition">
+	</form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<form class="btn btn-success" action="rangepartition.php">
+		<input type="submit" name="rangepartition" value="range partition">
+	</form>
+	<br>
+	<br>
+	<form class="btn btn-success" action="lock.php">
+		<input type="submit" name="lock" value="lock player table">
+	</form>
+	<br>
+	<br>
+	<form class="btn btn-success" action="optimize.php">
+		<input type="submit" name="optimize" value="optimize query">
+	</form>
+	<br>
+	<br>
+		<div class="container-fluid inline">
+			<div>
+			<button class="btn btn-info" data-bind="click: onInsertPlayer">INSERTPLAYER</button>
+					<form  method="post" action="insertplayer.php">
+							<div class="text-center">
+								<input id="playerid" type="text" name="player_id" class="invisible" placeholder="Player id" data-bind="value: playerid">
+							</div>
+							<div class="text-center">
+								<input id="name" type="text" name="playerame" class="invisible" placeholder="Player Name"data-bind="value: name">
+							</div>
+							<div class="text-center">
+								<input id="nationality" type="text" name="Nationality" class="invisible" placeholder="Nationality" data-bind="value: nationality">
+							</div>
+							<div class="text-center">
+								<input id="DOB" type="text" name="DOB" class="invisible" placeholder="Date of Birth" data-bind="value: DOB">
+							</div>
+							<div class="text-center">
+								<input id="age" type="text" name="age" class="invisible" placeholder="age" data-bind="value: age">
+							</div>
+							<div class="text-center">
+								<input id="batpref" type="text" name="Batpref" class="invisible" placeholder="Batpref" <data-bind="value :batpref">
+							</div>
+							<div class="text-center">
+								<input id="bowlpref" type="text" name="Bowlpref" class="invisible" placeholder="Bowlpref" data-bind="value :bowlpref">
+							</div>
+							<div class="text-center">
+								<input id="confirm" type="submit" value="confirm" class="btn btn-success invisible"/>
+							</div>
+					</form>
+			</div>
+			<div>
+					<button class="btn btn-info" data-bind="click: onInsertTeam">INSERTTEAM</button>
+					<form  method="post" action="insertteam.php">
+							<div class="text-center">
+								<input id="teamid" type="text" name="team_id" class="invisible" placeholder="Team id" data-bind="value: teamid">
+							</div>
+							<div class="text-center">
+								<input id="teamname" type="text" name="teamname" class="invisible" placeholder="Team Name"data-bind="value: teamname">
+							</div>
+							<div class="text-center">
+								<input id="budget" type="text" name="Budget" class="invisible" placeholder="Budget" data-bind="value: budget">
+							</div>
+							<div class="text-center">
+								<input id="points" type="text" name="points" class="invisible" placeholder="Points" data-bind="value: points">
+							</div>
+							<div class="text-center">
+								<input id="players" type="text" name="players" class="invisible" placeholder="Number of Players" data-bind="value: players">
+							</div>
+							<div class="text-center">
+								<input id="confirm2" type="submit" value="confirm" class="btn btn-success invisible"/>
+							</div>
+					</form>
+			</div>
+			<div>
+			</div>
+		</div>
+		<script src="js/knockout-3.4.0.js"></script>	
+		<script src="js/index.js"></script>
+		
+	</body>
+</html>
