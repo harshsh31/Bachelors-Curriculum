@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>CALCULATOR</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+			<meta name="viewport" content="width=devidev-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<style type="text/css">
+		div{
+			padding-top: 20px;
+		}
+		.bg {
+	    /* The image used */
+	    /*background-image: url("img_girl.jpg");*/
+
+	    /* Full height */
+	    height: 100%;
+
+	    /* Center and scale the image nicely */
+	    background-position: relative;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
+	</style>
+	</head>
+	<body class="bg" background="images/bg.jpg">
+		<div>
+			<div align = "center">
+				<span>
+        			<button type="button" id="addition" class="btn btn-info btn-sm">
+        		    <span class="glyphicon glyphicon-plus"></span> ADDITION
+        				</button>
+      			</span>  
+      			<span>
+        			<button type="button" id="subtraction" class="btn btn-info btn-sm">
+        		    <span class="glyphicon glyphicon-minus"></span> SUBTRACTION
+        				</button>
+      			</span>
+
+			</div>
+			<div align="center">	
+				<span  >
+					<input id="first" style="width:50px;height:50px" type="number"  >
+					</input>
+				</span>
+				
+				<span >
+					<input id="second"  style="width:50px;height:50px" type="number"  >
+					</input>
+					
+				</span>
+			</div>
+		<div align="center">
+			<div style="display: inline "  id="add1">
+			</div>
+			<div style="display: inline ;padding-left: 2cm" id="imgdiv">
+			</div>			
+			<div style="display: inline ;padding-left: 2cm" id="add2">
+			</div>
+		</div>
+		<div align="center">
+			<img src="images/equal.jpg" style="width:50px;height:50px" id="equaltosign" >
+		</div>
+		<div id="equal" align="center">	
+				
+		</div>
+
+		<div align="center">
+			<button class="btn btn-success" id="target"> Calculate</button>
+		</div>
+		<div align="center">
+			<span>
+        			<a class="btn btn-primary" href="exp1testing.html">Test
+        		    <span class="glyphicon glyphicon-step-forward"></span></a>
+      		</span>  
+		</div>
+	</div>
+	  <script src=js/knockout-3.4.0.js></script>
+		<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/exp1.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</body>
+</html>

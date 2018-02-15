@@ -1,0 +1,70 @@
+ <html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	 <style type="text/css">
+	.bg {
+	    /* The image used */
+	    /*background-image: url("img_girl.jpg");*/
+
+	    /* Full height */
+	    height: 100%;
+
+	    /* Center and scale the image nicely */
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
+	.content {
+	    position:relative;
+	    top:50%;
+	    left:30%;
+	    display: inline;
+	    
+	}
+	.content1{
+		position:relative;
+	    top:50%;
+	    left:60%;
+	    display: inline;
+	}
+	</style>
+</head>
+
+
+<body  class="bg" background="images/kid1.jpg">
+	<div class="content" >
+		<button  id="learn" size="3" class="btn btn-primary" >Learn</button>
+	</div>
+	<div class="content1" >
+		<button  id="test" size="3" class="btn btn-primary" >Test</button>
+	</div>
+	<script src=js/knockout-3.4.0.js></script>
+	<script type="text/javascript" src="js/exp1testing.js"></script>
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/exp1testing.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	 <script type="text/javascript"> 
+		$(document).ready(function(){
+		    $("#learn").click(function(){
+
+		        var div = $("#learn");  
+		        div.animate({left: '30%'}, "slow");
+		        div.animate({fontSize: '5em'}, "slow");
+		        $("#test").fadeOut(1000);
+		        setTimeout( function() { window.location = "exp1.html" }, 2000 );
+
+		    });
+		    $("#test").click(function(){
+
+		        var div = $("#test");  
+		        div.animate({left: '60%'}, "slow");
+		        div.animate({fontSize: '5em'}, "slow");
+		        $("#learn").fadeOut(1000);		        
+		        setTimeout( function() { window.location = "exp1testing.html" }, 2000 );
+		    });
+		});
+	</script> 	
+</body>
+</html> 
